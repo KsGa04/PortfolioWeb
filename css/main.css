@@ -1,8 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
     width: 100%;
     height: 100%;
     margin: 0; /* Убираем отступы по умолчанию */
     font-family: Oxygen;
+    color: #243E36;
   }
   main {
     position: relative;
@@ -51,7 +55,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("images/main.png") center;
+    background: url("../images/main.png") center;
     position: relative; /* Добавляем позиционирование, чтобы использовать абсолютное позиционирование для элементов внутри */
   }
   #main .image {

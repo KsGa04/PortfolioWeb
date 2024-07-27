@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="main.css"/>
-    <link rel="stylesheet" type="text/css" href="about.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/about.css"/>
+    <link rel="stylesheet" type="text/css" href="css/career.css"/>
+    <link rel="stylesheet" type="text/css" href="css/skills.css"/>
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css"/>
+    <link rel="stylesheet" type="text/css" href="css/contact.css"/>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oxygen" />
     <title>Portfolio</title>
 </head>
@@ -13,11 +17,11 @@
         <a class="main" href="#main">Kprog</a>
         <nav>
             <ul class="navigation">
-                <li><a href="#About">About</a></li>
-                <li><a href="#Career">Career</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="#ContactMe">Contact Me</a></li>
+                <li><a href="#About" onclick="scrollToSection('About')">About</a></li>
+                <li><a href="#Career" onclick="scrollToSection('Career')">Career</a></li>
+                <li><a href="#Skills" onclick="scrollToSection('Skills')">Skills</a></li>
+                <li><a href="#Portfolio" onclick="scrollToSection('Portfolio')">Portfolio</a></li>
+                <li><a href="#ContactMe" onclick="scrollToSection('ContactMe')">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -36,21 +40,253 @@
                 <div class="image1"></div>
             <div class="image2"></div>
             </section>
-            <aside>
-                <p class="headerAbout">About</p>
+            
+            <aside class="textAbout">
+                <div class="container">
+                    <p class="headerAbout">About Me</p>
+                </div>
                 <hr class="line">
-                <p class="desc">My Name is Ksenia Garancheva. I’m a Full-Stack Freelancer, and I’m purposeful, quick to learn and i take a responsible approach to work. Width 1,5 years experience as Back-End Developer. I have acquired skills necessary to build great websites</p>
+                <p class="desc">My Name is Ksenia Garancheva. I’m a Full-Stack Freelancer, and I’m purposeful, quick to learn and i take a responsible approach to work. Width 1,5 years experience as Full-Stack Developer. I have acquired skills necessary to build great websites</p>
                 <article class="info">
-                    
+                    <p><b>Name:</b> Ksenia Garancheva</p>
+                    <p><b>Phone:</b> +79872900450</p>
+                    <p><b>Age:</b> 20</p>
+                    <p><b>Experience:</b> 1,5 years</p>
+                    <p><b>Address:</b> Kazan, Russia</p>
+                    <p><b>Freelance:</b> Available</p>
                 </article>
+                <button type="button" class="download">Download CV</button>
             </aside>
-
         </section>
-        <section id="Career"></section>
-        <section id="Skills"></section>
-        <section id="Portfolio"></section>
-        <article id="ContactMe"></section>
+        <section id="Career">
+            <section class="education">
+                <p class="headerEducation">Education</p>
+                <hr class="link">
+                <div class="college">
+                    <p><b>Information systems and information</b></p>
+                    <p>College of Information Technology, KNRTU-KAI</p>
+                    <p>55 Bolshaya Krasnaya Street, Kazan, Russia</p>
+                    <p>2020-2024</p>
+                </div>
+                <div class="university">
+                    <p><b>Information systems and information</b></p>
+                    <p>College of Information Technology, KNRTU-KAI</p>
+                    <p>55 Bolshaya Krasnaya Street, Kazan, Russia</p>
+                    <p>2024-2028</p>
+                </div>
+            </section>
+            <section class="work">
+                <p class="headerEducation">Experience</p>
+                <hr class="link">
+                <div>
+                    <p><b>Business analyst (Trainee)</b></p>
+                    <p>BARS Group</p>
+                    <p>Getting to know the profession and passing the tests</p>
+                    <p>Dec 2022 - Dec 2022</p>
+                </div>
+                <div>
+                    <p><b>Developer (Trainee)</b></p>
+                    <p>Quarix</p>
+                    <p>Development of an information system on the topic</p>
+                    <p>Dec 2023 - Dec 2023</p>
+                </div>
+                <div>
+                    <p><b>Tester (Intern)</b></p>
+                    <p>Maxim-Technology</p>
+                    <p>Preparing Python Tests to test the functionality</p>
+                    <p>Jul 2023 - Feb 2024</p>
+                </div>
+                <div>
+                    <p><b>Freelancer</b></p>
+                    <p>Development of an information system on the topic</p>
+                    <p>Mar 2024 - Jun 2024</p>
+                </div>
+            </section>
+        </section>
+        <section id="Skills">
+            <section class="headerSkills">
+                <p>Skills</p>
+                <hr>
+            </section>
+            <article class="percentSkills">
+                <div class="character">
+                    <div>
+                        <p>Communication</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                          </div>
+                        <p>70%</p>
+                    </div>
+                    <div>
+                        <p>Responsibility</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 95%;"></div>
+                          </div>
+                        <p>95%</p>
+                    </div>
+                    <div>
+                        <p>Teamwork</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 60%;"></div>
+                          </div>
+                        <p>60%</p>
+                    </div>
+                    <div>
+                        <p>Learning</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                          </div>
+                        <p>85%</p>
+                    </div>
+                    <div>
+                        <p>Purposefulness</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                          </div>
+                        <p>90%</p>
+                    </div>
+                </div>
+                <div class="ability">
+                    <div>
+                        <p>C#</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                          </div>
+                        <p>80%</p>
+                    </div>
+                    <div>
+                        <p>Python</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 50%;"></div>
+                          </div>
+                        <p>50%</p>
+                    </div>
+                    <div>
+                        <p>JavaScript</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 20%;"></div>
+                          </div>
+                        <p>20%</p>
+                    </div>
+                    <div>
+                        <p>MSSQL</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 55%;"></div>
+                          </div>
+                        <p>55%</p>
+                    </div>
+                    <div>
+                        <p>HTML</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                          </div>
+                        <p>70%</p>
+                    </div>
+                    <div>
+                        <p>CSS</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                          </div>
+                        <p>65%</p>
+                    </div>
+                    <div>
+                        <p>ASP .NET</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                          </div>
+                        <p>80%</p>
+                    </div>
+                    <div>
+                        <p>Git</p>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                          </div>
+                        <p>90%</p>
+                    </div>
+                </div>
+            </article>
+            
+        </section>
+        <section id="Portfolio">
+            <section class="headerSkills">
+              <p>Portfolio</p>
+              <hr>
+            </section>
+            <section class="projects">
+              <div class="project-item">
+                <img src="images/image1.png" alt="Project 1">
+                <div class="buttons">
+                  <button class="button-left">&larr;</button>
+                  <button class="button-right">&rarr;</button>
+                </div>
+              </div>
+              <div class="project-item">
+                <img src="images/image1.png" alt="Project 2">
+                <div class="buttons">
+                  <button class="button-left">&larr;</button>
+                  <button class="button-right">&rarr;</button>
+                </div>
+              </div>
+              <div class="project-item">
+                <img src="images/image1.png" alt="Project 3">
+                <div class="buttons">
+                  <button class="button-left">&larr;</button>
+                  <button class="button-right">&rarr;</button>
+                </div>
+              </div>
+              <div class="project-item">
+                <img src="images/image1.png" alt="Project 4">
+                <div class="buttons">
+                  <button class="button-left">&larr;</button>
+                  <button class="button-right">&rarr;</button>
+                </div>
+              </div>
+              <div class="project-item">
+                <img src="images/image1.png" alt="Project 5">
+                <div class="buttons">
+                  <button class="button-left">&larr;</button>
+                  <button class="button-right">&rarr;</button>
+                </div>
+              </div>
+              <div class="project-item">
+                <img src="images/image1.png" alt="Project 6">
+                <div class="buttons">
+                  <button class="button-left">&larr;</button>
+                  <button class="button-right">&rarr;</button>
+                </div>
+              </div>
+            </section>
+          </section>
+        <article id="ContactMe">
+            <section class="headerSkills">
+                <p>Contact Me</p>
+                <hr>
+              </section>
+              <section class="contact">
+                <section class="form">
+                    <p>Feel free to contact me any time. I will get back to you as soon as I can!</p>
+                    <input id="nameUser" type="text" placeholder="Name">
+                    <input id="emailUser" type="email" placeholder="Email">
+                    <input id="messageUser" type="text" placeholder="Message">
+                    <button>Send</button>
+                </section>
+                <aside class="infoContact">
+                    <p>Info</p>
+                    <p>Mail</p>
+                    <p>k_prog@bk.ru</p>
+                    <p>Phone</p>
+                    <p>+79872900450</p>
+                    <p>Time</p>
+                    <p>09:00 - 18:00</p>
+                </aside>
+                </section>
+        </section>
     </main>
-
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
