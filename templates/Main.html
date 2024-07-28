@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <link rel="stylesheet" type="text/css" href="css/about.css"/>
-    <link rel="stylesheet" type="text/css" href="css/career.css"/>
-    <link rel="stylesheet" type="text/css" href="css/skills.css"/>
-    <link rel="stylesheet" type="text/css" href="css/portfolio.css"/>
-    <link rel="stylesheet" type="text/css" href="css/contact.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/about.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/career.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/skills.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/portfolio.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/contact.css"/>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oxygen" />
     <title>Portfolio</title>
 </head>
@@ -55,7 +55,7 @@
                     <p><b>Address:</b> Kazan, Russia</p>
                     <p><b>Freelance:</b> Available</p>
                 </article>
-                <button type="button" class="download">Download CV</button>
+                <button type="button" class="download" id="download">Download CV</button>
             </aside>
         </section>
         <section id="Career">
@@ -214,42 +214,42 @@
             </section>
             <section class="projects">
               <div class="project-item">
-                <img src="images/image1.png" alt="Project 1">
+                <img src="../static/images/image1.png" alt="Project 1">
                 <div class="buttons">
                   <button class="button-left">&larr;</button>
                   <button class="button-right">&rarr;</button>
                 </div>
               </div>
               <div class="project-item">
-                <img src="images/image1.png" alt="Project 2">
+                <img src="../static/images/image1.png" alt="Project 2">
                 <div class="buttons">
                   <button class="button-left">&larr;</button>
                   <button class="button-right">&rarr;</button>
                 </div>
               </div>
               <div class="project-item">
-                <img src="images/image1.png" alt="Project 3">
+                <img src="../static/images/image1.png" alt="Project 3">
                 <div class="buttons">
                   <button class="button-left">&larr;</button>
                   <button class="button-right">&rarr;</button>
                 </div>
               </div>
               <div class="project-item">
-                <img src="images/image1.png" alt="Project 4">
+                <img src="../static/images/image1.png" alt="Project 4">
                 <div class="buttons">
                   <button class="button-left">&larr;</button>
                   <button class="button-right">&rarr;</button>
                 </div>
               </div>
               <div class="project-item">
-                <img src="images/image1.png" alt="Project 5">
+                <img src="../static/images/image1.png" alt="Project 5">
                 <div class="buttons">
                   <button class="button-left">&larr;</button>
                   <button class="button-right">&rarr;</button>
                 </div>
               </div>
               <div class="project-item">
-                <img src="images/image1.png" alt="Project 6">
+                <img src="../static/images/image1.png" alt="Project 6">
                 <div class="buttons">
                   <button class="button-left">&larr;</button>
                   <button class="button-right">&rarr;</button>
@@ -268,7 +268,7 @@
                     <input id="nameUser" type="text" placeholder="Name">
                     <input id="emailUser" type="email" placeholder="Email">
                     <input id="messageUser" type="text" placeholder="Message">
-                    <button>Send</button>
+                    <button id="sendButton">Send</button>
                 </section>
                 <aside class="infoContact">
                     <p>Info</p>
@@ -282,11 +282,7 @@
                 </section>
         </section>
     </main>
-    <script>
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
+    <script src="../static/js/site.js">
     </script>
 </body>
 </html>
