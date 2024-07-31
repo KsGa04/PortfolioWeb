@@ -16,10 +16,6 @@ downloadBtn.addEventListener('click', () => {
   // Удаляем ссылку из DOM
   document.body.removeChild(link);
 });
-function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    section.scrollIntoView({ behavior: 'smooth' });
-}
 document.getElementById('sendButton').addEventListener('click', () => {
   const nameUser = document.getElementById('nameUser').value;
   const emailUser = document.getElementById('emailUser').value;
