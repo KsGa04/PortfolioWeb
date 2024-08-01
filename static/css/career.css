@@ -134,3 +134,104 @@
   margin-right: 10px;
   background-color: #243E36;
 } */
+@media (max-width:768px) {
+  #Career {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .education {
+    width: 90%;
+    margin-left: 0;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .headerEducation {
+    font-size: 20px;
+  }
+
+  .link {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  .college,
+  .university {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .college p,
+  .university p {
+    font-size: 14px;
+  }
+  .college p:nth-child(4),
+.university p:nth-child(4) {
+  grid-column: 2;
+  grid-row: 1 / 4;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  width: 80%;
+  height: 15%;
+  text-align: center;
+  margin-top: 10%;
+}
+.university{
+  margin-top: 3%;
+}
+
+  .work {
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+  }
+
+  .work > div {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .work > div p {
+    font-size: 14px;
+  }
+  .work > div > p:first-child {
+    font-weight: bold;
+  }
+  
+  .work > div > p:nth-child(2) {
+    grid-column: 1;
+  }
+  .work > div > p:nth-child(3) {
+    grid-column: 1 / 3;
+  }
+  
+  .work > div > p:nth-child(4) {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    height: 65%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .work > div:last-child > p:nth-child(3) {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+}

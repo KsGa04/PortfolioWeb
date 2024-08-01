@@ -106,3 +106,91 @@
     width: attr(style, width);
   }
 }
+
+@media (max-width: 768px) {
+  #Skills {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .headerSkills {
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .headerSkills p {
+    font-size: 1.5rem;
+  }
+
+  .headerSkills hr {
+    width: 80%;
+    border-top: 1px solid #ccc;
+    margin-bottom: 5px;
+  }
+  .percentSkills {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    height: auto;
+  }
+
+  .character {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .character,
+  .ability {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+  .character > div,
+  .ability > div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: flex-start;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .character > div > div,
+  .ability > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-column: 2 / 4;
+  }
+  .character > div > p,
+  .ability > div > p {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по центру */
+    width: 100%;
+  }
+
+  .character > div > div p:first-child,
+  .ability > div > div p:first-child {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .progress-container {
+    width: 100%;
+    height: 20px;
+  }
+
+  .progress-bar {
+    box-shadow: 5px 0px 3px rgba(36, 62, 54, 0.4);
+  }
+}

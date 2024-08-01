@@ -28,7 +28,7 @@
   }
   
   .projects {
-    width: 75%;
+    width: 85%;
     height: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -50,13 +50,7 @@
     width: 90%;
     height: 90%;
     object-fit: fill;
-    border-radius: 20px;;
-  }
-  .project-item img:nth-last-child() {
-    width: 90%;
-    height: 90%;
-    object-fit: contain;
-    border-radius: 20px;;
+    border-radius: 5px;
   }
   
   
@@ -81,3 +75,48 @@
     font-size: 25px;
     font-weight: bold;
   }
+  @media (max-width: 768px) {
+    #Portfolio {
+      height: auto;
+    }
+  
+    .headerSkills {
+      width: 90%;
+      height: auto;
+      padding: 20px 0;
+    }
+  
+    .headerSkills p {
+      font-size: 1.5rem;
+    }
+  
+    .projects {
+      width: 85%;
+      height: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      gap: 30px;
+    }
+  
+    .project-item {
+      height: 200px;
+    }
+  
+    .project-item img {
+      width: 90%;
+      height: 90%;
+    }
+  
+    .buttons {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .button-left,
+    .button-right {
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+    }
+  }
+  

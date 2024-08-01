@@ -115,3 +115,112 @@
     height: 40px;
     font-size: 16px;
     }
+    @media (max-width:768px) {
+      #About {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        background-color: #FFF7EE;
+      }
+    
+      #img {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 50px;
+      }
+    
+      .image1 {
+        width: 200px;
+        height: 255px;
+        background-color: #7CA982;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+      }
+    
+      .image2 {
+        width: 150px;
+        height: 150px;
+        background: url('../images/imgAbout.png');
+        border-radius: 10px;
+        position: absolute;
+        bottom: -50px;
+        left: 50px;
+        z-index: 2;
+      }
+    
+      .textAbout {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+
+      .header-about-container {
+        display: flex;
+        align-items: center;
+        width: 80%;
+    }
+    
+    .headerAbout {
+        font-size: 30px;
+        font-weight: bold;
+        color: #243E36;
+    }
+    
+    .textAbout .line {
+      width: 80%;
+        border-top: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+      .page .line {
+        flex-grow: 1;
+        border: none;
+        height: 2px;
+        background-color: #243E36;
+      }
+      .textAbout .desc {
+        font-size: 15px;
+        text-align: justify;
+        margin: 0 30px;
+        color: #243E36;
+      }
+      .info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-gap: 5px;
+        margin-top: 20px;
+        width: 85vw;
+        border: 2px solid orange;
+      }
+      
+      .info > * {
+        padding-left: 10px;
+      }
+      .download {
+        width: 50%;
+        background-color: #7CA982;
+        color: #243E36;
+        border: 0;
+        margin-top: 5%;
+        height: 40px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        }
+    }
