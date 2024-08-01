@@ -134,7 +134,7 @@
   margin-right: 10px;
   background-color: #243E36;
 } */
-@media (max-width:768px) {
+@media (max-width:1080px) {
   #Career {
     flex-direction: column;
     height: auto;

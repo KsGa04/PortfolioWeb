@@ -75,7 +75,7 @@
     font-size: 25px;
     font-weight: bold;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1080px) {
     #Portfolio {
       height: auto;
     }
