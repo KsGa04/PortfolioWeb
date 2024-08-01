@@ -164,7 +164,7 @@ body {
         object-fit: contain;
     }
 
-    @media (max-width:1080px) {
+    @media (max-width:768px) {
       html {
         scroll-behavior: smooth;
       }
@@ -204,8 +204,8 @@ body {
         }
         
         .navigation li {
-          margin-left: 3px;
-          font-size: 12px;
+          margin-left: 1px;
+          font-size: 15px;
         }
         
         .navigation a {

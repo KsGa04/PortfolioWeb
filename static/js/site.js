@@ -1,21 +1,19 @@
 const downloadBtn = document.getElementById('download');
 
-// Добавляем обработчик события клика на кнопку
-downloadBtn.addEventListener('click', () => {
-  // Создаем ссылку на файл
-  const link = document.createElement('a');
-  link.href = 'Rezyume.pdf';
-  link.download = 'Rezyume.pdf';
-
-  // Добавляем ссылку в DOM
-  document.body.appendChild(link);
-
-  // Имитируем клик на ссылку, чтобы начать скачивание
-  link.click();
-
-  // Удаляем ссылку из DOM
-  document.body.removeChild(link);
-});
+        downloadBtn.addEventListener('click', () => {
+            fetch('/download/Rezyume.pdf')
+                .then(response => response.blob())
+                .then(blob => {
+                    const url = window.URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = 'Rezyume.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                })
+                .catch(error => console.error(error));
+        });
 document.getElementById('sendButton').addEventListener('click', () => {
   const nameUser = document.getElementById('nameUser').value;
   const emailUser = document.getElementById('emailUser').value;

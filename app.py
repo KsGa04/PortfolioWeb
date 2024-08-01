@@ -1,8 +1,9 @@
 import json
 import os
 import webbrowser
+from os.path import join, dirname, realpath
 
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_file
 import smtplib
 from email.mime.text import MIMEText
 
@@ -16,7 +17,8 @@ app = Flask(__name__, static_folder=static_directory, template_folder=template_f
 # Словарь с изображениями для каждого проекта
 project_images = {
     "project1": ["image1.png", "image2.png", "image3.png", "image4.png", "image5.png", "image6.png", "image7.png"],
-    "project2": ["Picture1.png", "Picture2.png", "Picture3.png", "Picture4.png", "Picture5.png", "Picture6.png", "Picture7.png", "Picture8.png", "Picture9.png", "Picture10.png"],
+    "project2": ["Picture1.png", "Picture2.png", "Picture3.png", "Picture4.png", "Picture5.png", "Picture6.png",
+                 "Picture7.png", "Picture8.png", "Picture9.png", "Picture10.png"],
     "project3": ["bot1.png", "bot2.png", "bot3.png", "bot4.png"],
     "project4": ["Picture1.jpg", "Picture2.jpg", "Picture3.jpg", "Picture4.jpg", "Picture5.jpg", "Picture6.jpg"],
     "project5": ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg"],
@@ -68,6 +70,12 @@ def prev_image(project_name):
     current_index = current_indices[project_name]
     current_indices[project_name] = (current_index - 1) % len(project_images[project_name])
     return jsonify({'image': project_images[project_name][current_indices[project_name]]})
+
+
+@app.route('/download/Rezyume.pdf', methods=['GET'])
+def download_file():
+    file_path = join(dirname(realpath(__file__)), 'Rezyume.pdf')
+    return send_file(file_path, as_attachment=True)
 
 
 if __name__ == '__main__':
